@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Powerpuff Pop
+    </title>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #full-screen-background-image {
+            z-index: -999;
+            min-height: 100%;
+            min-width: 1024px;
+            width: 100%;
+            height: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        
+        #wrapper {
+            position: relative;
+            width: 800px;
+            min-height: 400px;
+            margin: 100px auto;
+        }
+        
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 0 0 0.2em #478034, 0 0 0.2em #7bae6a, 0 0 0.2em #7bae6a;
+        }
+        
+        h2 {
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 0 0 0.2em #7bae6a, 0 0 0.2em #7bae6a, 0 0 0.2em #7bae6a;
+        }
+        
+        #pic {
+            width: 690px;
+            height: 500px;
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body onclick="pop()" onload="changePic()">
+
+    <audio id="music">
+        <source src="(PE.3) cute cat_PopSound.mp3" type="audio/mpeg">
+    </audio>
+
+    <img alt="full screen background image" src="fa56a2ba1a8403fbf856c0cb0585ffcb.jpg" id="full-screen-background-image">
+
+    <div STYLE="position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <h1 ALIGN="center">Powerpuff Pop</h1>
+        <div ALIGN="center">
+            <div id="pic">
+                <img src="">
+            </div>
+        </div>
+        <h2 ALIGN="center" id="point">0</h2>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
